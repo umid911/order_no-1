@@ -1,0 +1,274 @@
+@import 'fonts.css';
+@import 'all.min.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+.container {
+    max-width: 1380px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
+}
+
+body {
+    background: url('../images/lazernaya-epilyacziya-2.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height:1080px; */
+}
+
+
+.header__nav {
+    padding: 15px ;
+    width: 100%;
+    backdrop-filter: blur(15px);
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+
+.header__nav-logo {
+    max-width: 200px;
+    width: 100%;
+    margin-right: 20px;
+}
+
+.header__nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__nav-left {
+    display: flex;
+    column-gap: 32px;
+}
+
+.list {
+    position: relative;
+}
+
+.header__nav-link {
+    font-size: 20px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: rgb(46, 46, 42);
+    font-family: 'un-one';
+    transition: .5s;
+  
+    
+}
+
+
+.list:hover .sub-menu__list {
+    opacity: 1;
+    z-index: 1;
+}
+
+.sub {
+    padding-bottom: 3px;
+}
+
+
+.sub-menu__list{
+    
+    position: absolute;
+    top: 70px;
+    z-index: -1;
+    width: 100px;
+    opacity: 0;
+    transition: 0.5s;
+    
+    
+}
+
+.sub-menu__link {
+    font-size: 13px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: rgb(46, 46, 42);
+    font-family: 'un-one';
+    transition: .5s; 
+    
+
+}
+.sub-menu__link:hover{
+    color: aqua;
+}
+
+
+
+.header__nav-link:hover {
+    color: aqua;
+   
+}
+
+
+.btn {
+    color: black;
+    margin-left: 30px;
+    font-size: 26px;
+    transition: .5s;
+}
+
+.btn:hover {
+    color: aqua;
+}
+
+.header__nav-right {
+    text-transform: capitalize;
+}
+
+.main__servis-info::after {
+    content: '';
+    display: block;
+    background: aqua;
+    opacity: 0.3;
+    width: 100%;
+    height: 2px;
+    margin-top: 10px;
+}
+.main__servis-info {
+    margin-top: 50px;
+    max-width: max-content;
+    font-size: 20px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: black;
+    font-family: 'comfort';
+}
+
+.main__servis-tel {
+    padding: 20px 0 15px 0;
+}
+
+.main__servis-box {
+    display: flex;
+    column-gap: 7px;
+}
+
+.main__singup-tel {
+    color: #010102 ;
+}
+
+
+.main__singup-tel {
+    margin-top: 20px;
+    font-size: 16px;
+}
+.main__nav-data {
+    margin-top: 160px;
+    font-family: 'comfort';
+}
+.main__nav-text {
+    margin-top: 100px;
+    margin-left: auto;
+    text-align: right;
+    max-width: 650px;
+}
+
+
+.main__nav-description {
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 55px;
+    font-family: 'un-one';
+    color: aqua;
+}
+
+.main__nav-word {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 30px;
+    line-height: 35px;
+    margin-top: 10px;
+    font-family: 'comfort';
+    color: moccasin;
+    margin-bottom: 15px;
+}
+
+.main__nav-desc {
+    font-size: 20px;
+    line-height: 18px; 
+    color: moccasin;
+    font-family: 'comfort';
+    margin-bottom: 40px;
+}
+
+.main__nav-link {
+    background: aqua;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 12px;
+    line-height: 12px; 
+    text-transform: uppercase;
+    padding: 5px;
+    border-radius: 5px;
+    color: black;
+    font-family: 'un-one';
+}
+
+.main__nav-link:hover {
+    background: moccasin;
+    color: black;
+}
+
+.main__nav-about {
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+.main__nav-us {
+    max-width: 500px;
+    width: 100%;
+    padding-top: 15px;
+}
+
+
+.footer {
+    background: linear-gradient(90.09deg, #010102 0%, moccasin 97.52%, moccasin 100%, aqua 100%);
+    background-size: 150%;
+    animation: bg-anime 3s infinite alternate-reverse; 
+    height: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+}
+
+.footer__box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@keyframes bg-anime {
+    from {
+        background-position: left;
+    }
+
+    to {
+        background-position: right;
+    }
+}
+
+.footer__box-left {
+    display: flex;
+    align-items: center;
+    column-gap: 350px;
+}
+
+.footer__box-add {
+    text-transform: uppercase;
+    font-size: 25px;
+    line-height: 35px;
+    font-family: 'un-one';
+    color: black; 
+}
+
+

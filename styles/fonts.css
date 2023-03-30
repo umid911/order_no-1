@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'rob-ital';
+    src: url('../fonts/Roboto-Italic.ttf');
+}
+
+@font-face {
+    font-family: 'rob-light';
+    src: url('../fonts/Roboto-LightItalic.ttf');
+}
+
+@font-face {
+    font-family: 'un-one';
+    src: url('../fonts/UnicaOne-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'comfort';
+    src: url('../fonts/Comfortaa-VariableFont_wght.ttf');
+}
